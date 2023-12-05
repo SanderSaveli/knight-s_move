@@ -1,0 +1,275 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@font-face {
+  font-family: "GilroyS";
+  src: url("Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBold.woff") format("woff"), url("Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyR";
+  src: url("Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: #25272F;
+}
+
+.all-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 35px 40px 30px 40px;
+}
+
+.icons {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+}
+.button-account {
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
+  position: relative;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+}
+
+.button-question {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  position: relative;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+}
+
+.content {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  max-width: 1015px;
+  margin: 0 auto;
+}
+
+.content__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__head {
+  font-family: Roboto;
+  font-size: 135px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 158.2px;
+  color: #9747FF;
+  margin: 0 0 15px 0;
+}
+
+.content__menu {
+  width: 950px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #1D1F25;
+  border-radius: 65px;
+  font-family: GilroyS;
+  color: #FFFFFF;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.menu__title {
+  font-size: 48px;
+  text-align: center;
+  padding: 40px 0 28px 0;
+}
+
+.menu__row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 -90px;
+}
+
+.menu__choice {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 90px;
+}
+
+.menu__text-choice {
+  font-size: 30px;
+  font-family: GilroyR;
+}
+
+.menu__button-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.menu__button {
+  margin: 30px 0;
+  width: 306px;
+  height: 74px;
+  background-color: #9747FF;
+  border-radius: 45px;
+  font-size: 40px;
+  text-align: center;
+  line-height: 70px;
+  text-transform: lowercase;
+}
+.menu__button:last-child {
+  margin: 0 0 65px 0;
+}
+.menu__button:hover {
+  -webkit-box-shadow: 0 0 10px 2px #9747FF;
+          box-shadow: 0 0 10px 2px #9747FF;
+}
+.menu__button:active {
+  background-color: #BF3BC4;
+  -webkit-box-shadow: 0 0 10px 2px #BF3BC4;
+          box-shadow: 0 0 10px 2px #BF3BC4;
+}
+.menu__button:visited {
+  background-color: #BF3BC4;
+}
+
+.content__button {
+  font-family: GilroyS;
+  font-size: 75px;
+  text-transform: lowercase;
+  color: #FFFFFF;
+  background: -webkit-gradient(linear, left top, right top, color-stop(60%, #9747FF), to(#BF3BC4));
+  background: linear-gradient(to right, #9747FF 60%, #BF3BC4 100%);
+  border-radius: 87px;
+  height: 162px;
+  text-align: center;
+  line-height: 145px;
+  margin: 30px 0 0 0;
+}
+.content__button span {
+  color: #FFFFFF;
+  margin: 0 70px;
+}
+.content__button:hover {
+  background: -webkit-gradient(linear, left top, right top, color-stop(20%, #9747FF), color-stop(50%, #BF3BC4));
+  background: linear-gradient(to right, #9747FF 20%, #BF3BC4 50%);
+}
+.content__button:active {
+  background: -webkit-gradient(linear, left top, right top, to(#BF3BC4));
+  background: linear-gradient(to right, #BF3BC4 100%);
+  -webkit-box-shadow: 0 0 10px 2px #BF3BC4;
+          box-shadow: 0 0 10px 2px #BF3BC4;
+}

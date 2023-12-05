@@ -1,0 +1,208 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
+@font-face {
+  font-family: "GilroyS";
+  src: url("Gilroy-SemiBold.eot");
+  src: local("Gilroy SemiBold"), local("Gilroy-SemiBold"), url("Gilroy-SemiBold.eot?#iefix") format("embedded-opentype"), url("Gilroy-SemiBold.woff") format("woff"), url("Gilroy-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GilroyR";
+  src: url("Gilroy-Regular.eot");
+  src: local("Gilroy Regular"), local("Gilroy-Regular"), url("Gilroy-Regular.eot?#iefix") format("embedded-opentype"), url("Gilroy-Regular.woff") format("woff"), url("Gilroy-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+:focus, :active {
+  outline: none;
+}
+
+a:focus, a:active {
+  outline: none;
+}
+
+nav, footer, header, aside {
+  display: block;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-size: 100%;
+  line-height: 1;
+  font-size: 14px;
+  -ms-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+}
+
+input, button, textarea {
+  font-family: inherit;
+}
+
+input::-ms-clear {
+  display: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+button::-moz-focus-inner {
+  padding: 0;
+  border: 0;
+}
+
+a, a:visited {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+ul li {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: inherit;
+  font-weight: inherit;
+}
+
+body {
+  background-color: #25272F;
+}
+
+.all-content {
+  max-width: 950px;
+  margin: 0 auto;
+  padding: 90px 0;
+  color: #FFFFFF;
+}
+.all-content .content__title, .all-content .content__button {
+  font-family: GilroyS;
+  font-size: 48px;
+}
+.all-content .input-block, .all-content .content__bottom-row {
+  font-family: GilroyR;
+  font-size: 30px;
+}
+
+.content {
+  background-color: #1D1F25;
+  border-radius: 65px;
+}
+
+.content__row {
+  min-height: 760px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 53px 63px;
+}
+
+.content__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.input-block {
+  display: inline-block;
+  height: 86px;
+  width: 825px;
+  background-color: #484B59;
+  line-height: 86px;
+  margin: 0 0 28px 0;
+  border-radius: 28px;
+}
+.input-block input {
+  width: 770px;
+  font-size: 30px;
+  background-color: #484B59;
+  margin: 0 25px;
+  color: #FFFFFF;
+}
+.input-block:first-child {
+  margin: 70px 0 28px 0;
+}
+.input-block:last-child {
+  margin: 0 0 60px 0;
+}
+
+.content__button {
+  text-transform: lowercase;
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #9747FF), color-stop(80%, #BF3BC4));
+  background-image: linear-gradient(to right, #9747FF 20%, #BF3BC4 80%);
+  padding: 29px 70px 32px 70px;
+  border-radius: 58px;
+  margin: 0 0 100px 0;
+}
+.content__button:hover {
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(20%, #9747FF), color-stop(50%, #BF3BC4));
+  background-image: linear-gradient(to right, #9747FF 20%, #BF3BC4 50%);
+}
+
+.content__bottom-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.content__no-acc {
+  margin: 0 0 11px 0;
+}
+
+.content__link {
+  display: inline-block;
+  color: #9747FF;
+}
+.content__link:hover {
+  color: #BF3BC4;
+}

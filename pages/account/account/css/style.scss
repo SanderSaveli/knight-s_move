@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@font-face {
+	font-family: 'GilroyS';
+	src: url('Gilroy-SemiBold.eot');
+	src: local('Gilroy SemiBold'), local('Gilroy-SemiBold'),
+		url('Gilroy-SemiBold.eot?#iefix') format('embedded-opentype'),
+		url('Gilroy-SemiBold.woff') format('woff'),
+		url('Gilroy-SemiBold.ttf') format('truetype');
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: 'GilroyR';
+	src: url('Gilroy-Regular.eot');
+	src: local('Gilroy Regular'), local('Gilroy-Regular'),
+		url('Gilroy-Regular.eot?#iefix') format('embedded-opentype'),
+		url('Gilroy-Regular.woff') format('woff'),
+		url('Gilroy-Regular.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal; 
+}
+@import "nullstyle.scss";
+
+$color1: #9747FF;
+$color2:#BF3BC4;
+$color3:#562687;
+$colorBG1:#25272F;
+$colorBG2:#1D1F25;
+$colorWT:#FFFFFF;
+
+body{
+	background-color: $colorBG1;
+}
+.all-conetent {
+	font-family: GilroyR;
+	color: $colorWT;
+	padding: 64px;
+	font-size: 30px;
+	.big__title {
+		font-family: GilroyS;
+		font-size: 48px;
+		padding: 35px 0 0 0;
+	}
+	.content__profile, .content__game-table{
+		background-color: $colorBG2;
+		border-radius: 65px;
+		padding: 32px 0;
+	}
+}
+
+.content {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.content__icons {}
+
+.content__img {
+	width: 78px;
+	height: 77px;
+}
+
+.content__profile {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	min-width: 659px;
+	//flex: 0 0 auto;
+	//padding: 0 70px;
+}
+
+//.profile-row {}
+
+.profile__title {}
+
+.profile__user {
+	display: flex;
+	align-items: center;
+	align-self: flex-start;
+	padding: 30px 70px 60px 70px;
+}
+
+.profile__photo {
+	width: 100px;
+	height: 100px;
+	background-color: $colorWT;
+	border-radius: 50%;
+	margin: 0 30px 0 0;
+}
+
+.profile__username {
+	font-size: 42px;
+	color: $color2;
+}
+
+.profile__tracker {
+	display: flex;
+	//justify-content: space-between;
+	margin: 0 -75px 39px;
+	
+}
+
+.profile__victory {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.profile__defeat {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.tracker__numb {
+	font-size: 75px;
+	color: $color1;
+	//padding: 0 75px;
+}
+
+.tracker__title {
+	padding: 0 75px;
+}
+
+.content__game-table {
+	display: flex;
+	flex-direction: column;
+	//justify-content: flex-start;
+	align-items: center;
+	width: 920px;
+}
+
+.game-table__title {}
+
+.game-table__column-name {
+	//overflow: auto;
+}
+
+
+
+
+.game-table{
+	display: inline-block;
+	margin: 30px 55px 60px 55px;
+	min-height: 585px;
+}
+.game-table__column{
+	//display: inline-block;
+	//display: flex;
+	//justify-content: space-between;
+}
+tr{
+	display: flex;
+	//justify-content: space-between;
+	align-items: flex-start;
+	border-bottom: 1px solid $color1;
+	&:first-child{
+		border: none ;
+		//border-radius: 22px;
+		//border: 1px solid $color1;
+	}
+
+	
+}
+th, td{
+	//display: flex;
+	//align-items: flex-start;
+	//justify-content: space-between;
+	display: inline-block;
+	width: 165px;
+	//margin: 0 0 5px 0;
+	padding: 10px;
+	&:last-child{
+		//margin: 0 0 5px 0;
+	}
+	text-align: center;
+	//overflow: auto;
+}
+td{
+	display: inline-block;
+	//border: 2px solid $colorBG1;
+	overflow: auto;
+	&::-webkit-scrollbar{
+		background-color: $colorBG1;
+		border-radius: 10px;
+		height: 10px;
+	}
+	&::-webkit-scrollbar-thumb{
+		border-radius: 10px;
+		background-color: $color3;
+	}
+	
+}
+
+.column-head{
+	//font-weight: 400;
+	//color: $color1;
+	background-color: $color1;
+	border-radius: 22px 22px 0 0;
+	//border-radius: 22px;
+	//border-bottom: 1px solid $color1;
+}
+.game-table__opponent {
+	//width: 170px;
+}
+
+.game-table__field {
+	//width: 100px;
+}
+
+.game-table__result {}
+
+.game-table__number-of-moves {}
+
+.game-table__time {}
