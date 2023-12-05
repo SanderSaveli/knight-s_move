@@ -1,0 +1,61 @@
+<!--Сообщаем браузеру как стоит обрабатывать эту страницу-->
+<!DOCTYPE html>
+<!--Оболочка документа, указываем язык содержимого-->
+<html lang="ru">
+	<!--Заголовок страницы, контейнер дл ядругих важных данных (не отображается)-->
+	<head>
+		<!--Заголовок страницы в браузере-->
+		<title>Игра</title>
+		<link rel="stylesheet" href="css/style.css">
+		<!--Кодировка страницы-->
+		<meta chsrset="UTF-8"/>
+	</head>
+	<!--Отображаемое тело страницы-->
+	<body>		
+		<div class="content">
+			<div class="container">
+				<div class="container__icons">
+					<div class="content__home">
+						<img src="img/icons/button_home.svg" alt="">
+					</div>
+					<div class="content__rules">
+						<img src="img/icons/button_rules.svg" alt="">
+					</div>
+				</div>
+				<div class="content__game-field">
+					<canvas id="canvas" class="content__canvas">
+						<!--Извините, ваш браузер нет поддерживает&lt;canvas&gt; элемент.-->
+					</canvas>
+				</div>
+				<div class="container__info">
+					<div class="container__score content__info">
+						<div class="container__players username-1">
+							<div class="container__user ">
+								<div class="content__photo"></div>
+								<div class="content__username">@ddd</div>
+							</div>
+							<div class="content__time">00:00</div>
+						</div>
+						<div class="container__players username-2">
+							<div class="container__user">
+								<div class="content__photo"></div>
+								<div class="content__username">@ddd</div>
+							</div>
+							<div class="content__time">00:00</div>
+						</div>
+					</div>
+					<!--Представленный ниже блок крыть от зрителя до объявления победителя-->
+					<div class="container__winner content__info">
+						<div class="content__result">Результат игры:</div>
+						<div class="container__user">
+							<div class="content__photo"></div>
+							<div class="content__username user-winner">@ddffe</div>
+						</div>
+						<div class="content__result">выиграл!</div>
+					</div>
+					<div class="content__button">Сдаться</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
