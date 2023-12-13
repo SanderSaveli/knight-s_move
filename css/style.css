@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap");
 * {
@@ -320,19 +321,6 @@ tr .column-head {
   align-items: center;
   justify-content: space-between;
   width: 35%;
-  /*.container__winner{
-  	width: 100%;
-  	display: flex;
-  	flex-direction: column;
-  	align-items: center;
-
-  	.result{
-  		margin: 15px 0;
-  	}
-  	position:relative;
-  	top: -460px;
-  	visibility: hidden;
-  }*/
 }
 .content__info .container__score {
   display: flex;
@@ -354,6 +342,17 @@ tr .column-head {
 }
 .content__info .container__score .username-2 {
   color: #bf3bc4;
+}
+
+.container__winner {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+}
+.container__winner .result {
+  margin: 15px 0;
 }
 
 .content__form {
@@ -435,7 +434,10 @@ tr .column-head {
   width: 100%;
   height: 100%;
   aspect-ratio: 1/1;
-  background-color: #25272f;
+}
+
+.hide {
+  display: none;
 }
 
 /*.content__row{
@@ -452,4 +454,47 @@ tr .column-head {
 			border-radius: 10px;
 			background-color: $color3;
 		}
-}*//*# sourceMappingURL=style.css.map */
+}*/
+/* Стили для всплывающего окна */
+.popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 30px;
+  background-color: #484b59;
+  border: 2px solid #333;
+  color: #fff;
+  font-family: "Montserrat Alternates";
+  border-radius: 18px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  text-align: center;
+  z-index: 9999;
+}
+
+.popup p {
+  margin-bottom: 20px;
+  font-size: 46px;
+}
+
+.popup button {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  padding: 10px;
+  font-size: 26px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  background-color: #9747ff;
+  color: #fff;
+}
+
+.popup button:hover {
+  background-color: #782cdc;
+}
+
+.selected {
+  background-color: #bf3bc4;
+  box-shadow: 0 0 10px 2px #bf3bc4;
+}/*# sourceMappingURL=style.css.map */

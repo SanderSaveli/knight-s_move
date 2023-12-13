@@ -1,7 +1,7 @@
 <?php
 $data = json_decode(file_get_contents('php://input'), true);
 $board = $data['board'];
-$cellFrom = $data['cellFrom'];
+$cellFrom = json_decode(json_encode($data['cellFrom']));
 
 require_once __DIR__ . "/MoveManager.php";
 $MoveManager = new MoveManager();

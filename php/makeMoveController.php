@@ -14,13 +14,15 @@ $processedData = $MoveManager->makeMove($board, $cellFrom, $cellTo);
 if(!empty($processedData)){
     $answer = array();
     $answer['answerType'] = "success";
-    $answer['board'] = $processedData;
+    $answer['board'] = $processedData['board'];
+    $answer['knightPos'] = $processedData['knightPos'];
     echo json_encode($answer);
     }
     else{
     $answer = array();
     $answer['answerType'] = "error";
-    $answer['board'] = $processedData;
+    $answer['board'] = $processedData['board'];
+    $answer['knightPos'] = $processedData['knightPos'];
     echo json_encode($answer);
 }
 

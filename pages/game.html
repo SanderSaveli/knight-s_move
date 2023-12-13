@@ -16,8 +16,9 @@
 				</div>
 			</div>
 
-			<div class="content__game-field block-backgr">
-				<canvas id="canvas" class="content__canvas"> </canvas>
+			<div class="content__game-field block-backgr" id="canvasBorder">
+				<canvas id="canvas" class="content__canvas" width="500" height="500">
+				</canvas>
 			</div>
 
 			<div class="content__info">
@@ -27,28 +28,19 @@
 							<div class="content__photo profile__photo"></div>
 							<div class="content__username profile__username">@ddd</div>
 						</div>
-						<div class="content__time text-numb">00:00</div>
+						<div class="content__time text-numb" id="player1-timer">00:30</div>
 					</div>
 					<div class="container__players username-2">
 						<div class="container__user">
 							<div class="content__photo profile__photo"></div>
 							<div class="content__username profile__username">@ddd</div>
 						</div>
-						<div class="content__time text-numb">00:00</div>
+						<div class="content__time text-numb" id="player2-timer">00:30</div>
 					</div>
 				</div>
-				<!--Представленный ниже блок div крыть от зрителя до объявления победителя-->
-				<!--<div class="container__winner block-backgr">
-								<div class="result">Результат игры:</div>
-							<div class="container__user">
-								<div class="content__photo profile__photo"></div>
-								<div class="content__username user-winner profile__username">@ddffe</div>
-							</div>
-							<div class="result">выиграл!</div>
-							</div>-->
-				<div class="big-button">Сдаться</div>
+				<div class="big-button" id="giveUp">Сдаться</div>
 			</div>
 		</div>
 	</body>
-	<script src="/js/game.js"></script>
+	<script type="module" src="/js/game.js"></script>
 </html>
