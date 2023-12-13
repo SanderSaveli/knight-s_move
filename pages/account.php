@@ -2,14 +2,14 @@
 <html lang="ru">
 	<head>
 		<title>Мой профиль</title>
-		<link rel="stylesheet" href="../css/style.css">
+		<link rel="stylesheet" href="/css/style.css">
 		<meta chsrset="UTF-8"/>
 	</head>
 	<body>		
 		<div class="all-content row">
 				<div class="content__icons">
 					<div class="content__img">
-						<img src="../img/icons/button_home.svg" alt=""/>
+						<img src="/img/icons/button_home.svg" alt=""/>
 					</div>	
 				</div>
 

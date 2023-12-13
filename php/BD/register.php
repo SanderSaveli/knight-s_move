@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 if($updateStmt->execute()){
                     $_SESSION['userid'] = $userid;
                     $_SESSION['profileid'] = $profileid; 
-                    header("Location: /pages/account/account/account.php");
+                    header("Location: /pages/account.php");
                     exit();
                 }
                 $updateStmt->close();

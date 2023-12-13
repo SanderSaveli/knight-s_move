@@ -28,7 +28,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['profileid'] = $profileid; 
             
             echo($_SESSION['profileid']);
-            header("Location: /pages/account/account/account.php");
+            header("Location: /pages/account.php");
             exit();
         } else {
             echo "Неверное имя пользователя или пароль.";

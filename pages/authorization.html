@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Авторизация</title>
+		<link rel="stylesheet" href="/css/style.css" />
+		<meta chsrset="UTF-8" />
+	</head>
+	<body>
+		<div class="all-content">
+			<div class="content__form block-backgr">
+				<div class="content__title title">Авторизация</div>
+				<!--<div class="content__row block-backgr">-->
+				<div class="form">
+					<form action="/php/BD/login.php" method="post">
+						<div class="input-block">
+							<input
+								tabindex="1"
+								type="text"
+								name="username"
+								placeholder="логин"
+							/>
+						</div>
+						<div class="input-block">
+							<input
+								tabindex="2"
+								type="password"
+								name="password"
+								placeholder="пароль"
+							/>
+						</div>
+						<button type="submit" class="content__button big-button">войти</и>
+					</form>
+				</div>
+				<!--Возможно стоит переделать под button для отправки формы-->
+				<div class="content__bottom-row">
+					<div class="content__no-acc">У вас нет аккаунта?</div>
+					<a href="/pages/registration.html" class="content__link">Создать аккаунт</a>
+				</div>
+				<!--</div>-->
+			</div>
+		</div>
+	</body>
+</html>

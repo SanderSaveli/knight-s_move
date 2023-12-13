@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap');
-@import "nullstyle.scss";
+@import 'nullstyle.scss';
 
-$color1: #9747FF;
-$color2:#BF3BC4;
-$color3:#562687;
-$color4:#FFFFFF;
-$colorBG1:#25272F;
-$colorBG2:#1D1F25;
+$color1: #9747ff;
+$color2: #bf3bc4;
+$color3: #562687;
+$color4: #ffffff;
+$colorBG1: #25272f;
+$colorBG2: #1d1f25;
 
-$ff: "Montserrat Alternates";
+$ff: 'Montserrat Alternates';
 
 $fs-num: 75px;
 $fs-title: 48px;
@@ -17,61 +17,62 @@ $fs-username: 42px;
 $fs-mintitle: 40px;
 $fs-regular: 30px;
 
-body{
+body {
 	background-color: $colorBG1;
 	//padding: 40px;
 }
 
 //общий класс для всех файлов. обозначает внутренниц отступ для вмещения ВСЕГО контента внутри
-.all-content{
+.all-content {
 	padding: 40px; //пробный отступ
 	font-family: $ff;
 	color: $color4;
 	font-size: 30px;
 	font-weight: 400;
-	.name-game{
+	.name-game {
 		font-family: Roboto;
 		font-size: 135px;
 		font-weight: 900;
 		text-transform: uppercase;
 		color: $color1;
 	}
-	.title{
+	.title {
 		font-size: 48px;
 		font-weight: 600;
 	}
-	.big-button, .menu__button{
-	font-size: 40px;
-	font-weight: 600;
-	text-transform: lowercase;
+	.big-button,
+	.menu__button {
+		font-size: 40px;
+		font-weight: 600;
+		text-transform: lowercase;
 	}
 	.text-numb {
 		font-size: 75px;
 		font-weight: 600;
 	}
-	.profile__username{
+	.profile__username {
 		font-size: 42px;
 		font-weight: 600;
 	}
-	.text{
+	.text {
 		font-size: 42px;
 	}
 }
 
 //применим для главного меню, игры и профиля. выстраивает все основные блоки по горизонтали
-.row{
+.row {
 	display: flex;
 	justify-content: space-between;
 	//главное меню
-	.button-rules{
+	.button-rules {
 		order: 1;
 		align-self: flex-end;
 	}
-	height: 100%;
+	//height: 100%;
 }
 
-.big-button{
-	padding:30px 60px;
+.big-button {
+	padding: 30px 60px;
 	border-radius: 60px;
 	background-image: linear-gradient(to right, $color1 20%, $color2 80%);
 	&:hover {
@@ -79,14 +80,14 @@ body{
 	}
 }
 
-.block-backgr{
+.block-backgr {
 	background-color: $colorBG2;
 	border-radius: 65px;
 	width: 100%;
 	padding: 20px;
 }
 
-.profile__photo{
+.profile__photo {
 	width: 100px;
 	height: 100px;
 	border-radius: 50%;
@@ -94,19 +95,16 @@ body{
 	margin: 15px;
 }
 
-
-.title{
+.title {
 	margin: 10px 0 0 0;
 }
-
-
 
 //для главной станицы
 .button-account {
 	order: 3;
 	align-self: flex-start;
 }
-.content__menu{
+.content__menu {
 	order: 2;
 	display: flex;
 	flex-direction: column;
@@ -114,22 +112,22 @@ body{
 	align-items: center;
 	margin: 0 10px;
 }
-.menu{
+.menu {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	margin: 30px 0;
-	.menu__row{
+	.menu__row {
 		display: flex;
-		.menu__choice{
+		.menu__choice {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
-			margin: 25px 20px 0 20px ;
+			margin: 25px 20px 0 20px;
 		}
 	}
 }
-.menu__button{
+.menu__button {
 	background-color: $color1;
 	border-radius: 45px;
 	text-align: center;
@@ -152,26 +150,25 @@ body{
 	}
 }
 
-
 //для профиля
 
-.content__profile{
+.content__profile {
 	align-self: flex-start;
 	width: 35%;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	//justify-content: space-between;
-	.profile__user{
+	.profile__user {
 		display: flex;
 		align-items: center;
-		margin: 20px 0 20px 50px ;
+		margin: 20px 0 20px 50px;
 	}
-	.profile__score{
+	.profile__score {
 		display: flex;
 		padding: 0 0 0 40px;
 		//justify-content: space-between;
-		.profile__tracker{
+		.profile__tracker {
 			display: flex;
 			flex-direction: column;
 			align-items: center;
@@ -179,34 +176,12 @@ body{
 		}
 		margin: 0 0 20px 0;
 	}
-	
 }
-.profile{
+.profile {
 	display: flex;
 	flex-direction: column;
 	align-items: flex-start;
 	///justify-content: flex-start;
-	width: 100%;
-		overflow: auto;
-	&::-webkit-scrollbar {
-		background-color: $colorBG1;
-		border-radius: 10px;
-		height: 10px;
-	}
-
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: $color3;
-	}
-	
-}
-.content__game-table{
-	width: 53%;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-}
-.game-table{
 	width: 100%;
 	overflow: auto;
 	&::-webkit-scrollbar {
@@ -214,7 +189,27 @@ body{
 		border-radius: 10px;
 		height: 10px;
 	}
-	
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $color3;
+	}
+}
+.content__game-table {
+	width: 53%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.game-table {
+	width: 100%;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		background-color: $colorBG1;
+		border-radius: 10px;
+		height: 10px;
+	}
+
 	&::-webkit-scrollbar-thumb {
 		border-radius: 10px;
 		background-color: $color3;
@@ -222,7 +217,6 @@ body{
 }
 .table {
 	margin: 30px 55px 60px 55px;
-
 }
 tr {
 	display: inline-block;
@@ -234,15 +228,17 @@ tr {
 	&:first-child {
 		border: none;
 	}
-	th, td {
+	th,
+	td {
 		display: inline-block;
 		width: 120px;
 		padding: 10px 15px;
 	}
-	.game-table__opponent, .game-table__result{
+	.game-table__opponent,
+	.game-table__result {
 		width: 220px;
 	}
-	.game-table__time{
+	.game-table__time {
 		width: 140px;
 	}
 	td {
@@ -264,52 +260,29 @@ tr {
 	}
 }
 
-
-
 //для игры
-.container__icons{
+.container__icons {
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
-.content__game-field {
-	width: 47.5%;
-	padding: 30px;
-	box-shadow: 0 0 10px 10px $color2;
-	overflow: auto;
-	&::-webkit-scrollbar {
-		background-color: $colorBG1;
-		border-radius: 10px;
-		height: 10px;
-	}
-	&::-webkit-scrollbar-thumb {
-		border-radius: 10px;
-		background-color: $color3;
-	}
-
-	.content__canvas {
-		width: 810px;
-		height: 810px;
-		background-color: $colorBG1;
-	}
-}
-.content__info{
+.content__info {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: space-between;
 	width: 35%;
-	.container__score{
+	.container__score {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
 		width: 100%;
-		.container__players{
+		.container__players {
 			display: flex;
 			align-items: center;
 			justify-content: space-between;
-			.content__time{
+			.content__time {
 				padding: 0 40px 35px 0;
 			}
 			margin: 20px;
@@ -320,7 +293,7 @@ tr {
 		.username-2 {
 			color: $color2;
 		}
-		
+
 		//visibility: hidden;
 	}
 	/*.container__winner{
@@ -336,22 +309,17 @@ tr {
 		top: -460px;
 		visibility: hidden;
 	}*/
-
-	
 }
-
-
 
 //для авторизации
 
-.content__form{
+.content__form {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	width: 50%;
 	margin: 0 auto;
-	
 }
 
 .form {
@@ -365,7 +333,7 @@ tr {
 .input-block {
 	display: inline-block;
 	width: 100%;
-	background-color: #484B59;
+	background-color: #484b59;
 	line-height: 86px;
 	margin: 0 0 28px 0;
 	border-radius: 28px;
@@ -373,8 +341,8 @@ tr {
 	& input {
 		width: 92%;
 		font-size: 30px;
-		background-color: #484B59;
-	margin: 0 25px;
+		background-color: #484b59;
+		margin: 0 25px;
 		padding: 22px 20px;
 		color: $color4;
 	}
@@ -386,9 +354,7 @@ tr {
 	&:last-child {
 		margin: 0 0 60px 0;
 	}
-
 }
-
 
 .input__photo {
 	margin: 10px 10px 38px 10px;
@@ -414,6 +380,20 @@ tr {
 	margin: 10px 0 10px 0;
 	&:hover {
 		color: $color2;
+	}
+}
+.content__game-field {
+	width: auto;
+	height: 80vh;
+	aspect-ratio: 1 / 1;
+	padding: 30px;
+	box-shadow: 0 0 10px 10px $color2;
+
+	.content__canvas {
+		width: 100%;
+		height: 100%;
+		aspect-ratio: 1 / 1;
+		background-color: $colorBG1;
 	}
 }
 /*.content__row{
