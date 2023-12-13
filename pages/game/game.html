@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<title>Игра</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<meta chsrset="UTF-8" />
+	</head>
+	<body>
+		<div class="all-content row">
+				<div class="container__icons">
+					<div class="content__home button_home">
+						<img src="../img/icons/button_home.svg" alt="" />
+					</div>
+					<div class="content__rules button-rules">
+						<img src="../img/icons/button_rules.svg" alt="" />
+					</div>
+				</div>
+
+				<div class="content__game-field block-backgr">
+					<canvas id="canvas" class="content__canvas">
+					</canvas>
+				</div>
+
+				<div class="content__info">
+						<div class="container__score block-backgr">
+							<div class="container__players username-1">
+								<div class="container__user">
+									<div class="content__photo profile__photo"></div>
+									<div class="content__username profile__username">@ddd</div>
+								</div>
+								<div class="content__time text-numb">00:00</div>
+							</div>
+							<div class="container__players username-2">
+								<div class="container__user">
+									<div class="content__photo profile__photo"></div>
+									<div class="content__username profile__username">@ddd</div>
+								</div>
+								<div class="content__time text-numb">00:00</div>
+							</div>
+							
+						</div>
+					<!--Представленный ниже блок div крыть от зрителя до объявления победителя-->
+						<!--<div class="container__winner block-backgr">
+								<div class="result">Результат игры:</div>
+							<div class="container__user">
+								<div class="content__photo profile__photo"></div>
+								<div class="content__username user-winner profile__username">@ddffe</div>
+							</div>
+							<div class="result">выиграл!</div>
+							</div>-->
+					<div class="big-button">Сдаться</div>		
+				</div>
+		</div>
+	</body>
+	<script src="/js/game.js"></script>
+</html>

@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@400;500;600&display=swap');
+@import "nullstyle.scss";
+
+$color1: #9747FF;
+$color2:#BF3BC4;
+$color3:#562687;
+$color4:#FFFFFF;
+$colorBG1:#25272F;
+$colorBG2:#1D1F25;
+
+$ff: "Montserrat Alternates";
+
+$fs-num: 75px;
+$fs-title: 48px;
+$fs-username: 42px;
+$fs-mintitle: 40px;
+$fs-regular: 30px;
+
+body{
+	background-color: $colorBG1;
+	//padding: 40px;
+}
+
+//общий класс для всех файлов. обозначает внутренниц отступ для вмещения ВСЕГО контента внутри
+.all-content{
+	padding: 40px; //пробный отступ
+	font-family: $ff;
+	color: $color4;
+	font-size: 30px;
+	font-weight: 400;
+	.name-game{
+		font-family: Roboto;
+		font-size: 135px;
+		font-weight: 900;
+		text-transform: uppercase;
+		color: $color1;
+	}
+	.title{
+		font-size: 48px;
+		font-weight: 600;
+	}
+	.big-button, .menu__button{
+	font-size: 40px;
+	font-weight: 600;
+	text-transform: lowercase;
+	}
+	.text-numb {
+		font-size: 75px;
+		font-weight: 600;
+	}
+	.profile__username{
+		font-size: 42px;
+		font-weight: 600;
+	}
+	.text{
+		font-size: 42px;
+	}
+}
+
+//применим для главного меню, игры и профиля. выстраивает все основные блоки по горизонтали
+.row{
+	display: flex;
+	justify-content: space-between;
+	//главное меню
+	.button-rules{
+		order: 1;
+		align-self: flex-end;
+	}
+	height: 100%;
+}
+
+.big-button{
+	padding:30px 60px;
+	border-radius: 60px;
+	background-image: linear-gradient(to right, $color1 20%, $color2 80%);
+	&:hover {
+		background-image: linear-gradient(to right, $color1 20%, $color2 50%);
+	}
+}
+
+.block-backgr{
+	background-color: $colorBG2;
+	border-radius: 65px;
+	width: 100%;
+	padding: 20px;
+}
+
+.profile__photo{
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	background-color: $color4;
+	margin: 15px;
+}
+
+
+.title{
+	margin: 10px 0 0 0;
+}
+
+
+
+//для главной станицы
+.button-account {
+	order: 3;
+	align-self: flex-start;
+}
+.content__menu{
+	order: 2;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
+}
+.menu{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin: 30px 0;
+	.menu__row{
+		display: flex;
+		.menu__choice{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 25px 20px 0 20px ;
+		}
+	}
+}
+.menu__button{
+	background-color: $color1;
+	border-radius: 45px;
+	text-align: center;
+	width: 330px;
+	padding: 10px;
+	margin: 30px 0 0 0;
+	&:last-child {
+		margin: 30px 0 50px 0;
+	}
+	&:hover {
+		box-shadow: 0 0 10px 2px $color1;
+	}
+	&:active {
+		background-color: $color2;
+		box-shadow: 0 0 10px 2px $color2;
+	}
+	//при выборе меняет цвет:
+	&:visited {
+		background-color: $color2;
+	}
+}
+
+
+//для профиля
+
+.content__profile{
+	align-self: flex-start;
+	width: 35%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	//justify-content: space-between;
+	.profile__user{
+		display: flex;
+		align-items: center;
+		margin: 20px 0 20px 50px ;
+	}
+	.profile__score{
+		display: flex;
+		padding: 0 0 0 40px;
+		//justify-content: space-between;
+		.profile__tracker{
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			margin: 0 60px;
+		}
+		margin: 0 0 20px 0;
+	}
+	
+}
+.profile{
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	///justify-content: flex-start;
+	width: 100%;
+		overflow: auto;
+	&::-webkit-scrollbar {
+		background-color: $colorBG1;
+		border-radius: 10px;
+		height: 10px;
+	}
+
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $color3;
+	}
+	
+}
+.content__game-table{
+	width: 53%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.game-table{
+	width: 100%;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		background-color: $colorBG1;
+		border-radius: 10px;
+		height: 10px;
+	}
+	
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $color3;
+	}
+}
+.table {
+	margin: 30px 55px 60px 55px;
+
+}
+tr {
+	display: inline-block;
+	display: flex;
+	align-items: flex-start;
+	justify-content: space-between;
+	border-bottom: 1px solid $color1;
+	text-align: center;
+	&:first-child {
+		border: none;
+	}
+	th, td {
+		display: inline-block;
+		width: 120px;
+		padding: 10px 15px;
+	}
+	.game-table__opponent, .game-table__result{
+		width: 220px;
+	}
+	.game-table__time{
+		width: 140px;
+	}
+	td {
+		display: inline-block;
+		overflow: auto;
+		&::-webkit-scrollbar {
+			background-color: $colorBG1;
+			border-radius: 10px;
+			height: 10px;
+		}
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: $color3;
+		}
+	}
+	.column-head {
+		background-color: $color1;
+		border-radius: 22px 22px 0 0;
+	}
+}
+
+
+
+//для игры
+.container__icons{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.content__game-field {
+	width: 47.5%;
+	padding: 30px;
+	box-shadow: 0 0 10px 10px $color2;
+	overflow: auto;
+	&::-webkit-scrollbar {
+		background-color: $colorBG1;
+		border-radius: 10px;
+		height: 10px;
+	}
+	&::-webkit-scrollbar-thumb {
+		border-radius: 10px;
+		background-color: $color3;
+	}
+
+	.content__canvas {
+		width: 810px;
+		height: 810px;
+		background-color: $colorBG1;
+	}
+}
+.content__info{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-between;
+	width: 35%;
+	.container__score{
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		width: 100%;
+		.container__players{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			.content__time{
+				padding: 0 40px 35px 0;
+			}
+			margin: 20px;
+		}
+		.username-1 {
+			color: $color1;
+		}
+		.username-2 {
+			color: $color2;
+		}
+		
+		//visibility: hidden;
+	}
+	/*.container__winner{
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		
+		.result{
+			margin: 15px 0;
+		}
+		position:relative;
+		top: -460px;
+		visibility: hidden;
+	}*/
+
+	
+}
+
+
+
+//для авторизации
+
+.content__form{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 50%;
+	margin: 0 auto;
+	
+}
+
+.form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin: 0 0 100px 0;
+}
+
+.input-block {
+	display: inline-block;
+	width: 100%;
+	background-color: #484B59;
+	line-height: 86px;
+	margin: 0 0 28px 0;
+	border-radius: 28px;
+
+	& input {
+		width: 92%;
+		font-size: 30px;
+		background-color: #484B59;
+	margin: 0 25px;
+		padding: 22px 20px;
+		color: $color4;
+	}
+
+	&:first-child {
+		margin: 70px 0 28px 0;
+	}
+
+	&:last-child {
+		margin: 0 0 60px 0;
+	}
+
+}
+
+
+.input__photo {
+	margin: 10px 10px 38px 10px;
+	.input__img {
+		opacity: 0;
+		visibility: hidden;
+		position: absolute;
+	}
+	.input__file-button-text {
+		display: inline-block;
+
+		padding: 30px 0 0 20px;
+	}
+}
+.content__bottom-row {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+.content__link {
+	display: inline-block;
+	color: $color1;
+	margin: 10px 0 10px 0;
+	&:hover {
+		color: $color2;
+	}
+}
+/*.content__row{
+	width: 100%;
+	overflow: auto;
+	
+		&::-webkit-scrollbar {
+			background-color: $colorBG1;
+			border-radius: 10px;
+			height: 10px;
+		}
+	
+		&::-webkit-scrollbar-thumb {
+			border-radius: 10px;
+			background-color: $color3;
+		}
+}*/
+
+//для регистрации
